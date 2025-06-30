@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HICreat | ポートフォリオ</title>
+  <!-- 共通リセット -->
+  <link rel="stylesheet" href="styles/reset.css" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <!-- ページ固有スタイル -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/modal.css" />
+  <!-- ファビコン -->
+  <link rel="icon" href="images/mark.png" type="image/icon">
+  <link rel="icon" href="images/mark.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/mark.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
+  <link rel="manifest" href="/path/to/your/site.webmanifest">
+</head>
+
+<body id="top">
+  <!-- loadingここから (bodyのすぐ下に)-->
+  <div class="loading" id="loading">
+    <div class="loading_logo"><img src="images/big_mark.png" alt=""></div>
+  </div>
+  <div id="wrapper">
+    <!-- ■ ヘッダー ──────────────────────────────────── -->
+    <header>
+      <h1 class="pc_h1"><img src="images/hicreat_black.png" alt=""></h1>
+      <nav class="pc_nav">
+        <ul>
+          <li><a href="#top" class="all-caps">TOP</a></li>
+          <li><a href="#practice">制作演習</a></li>
+          <li><a href="#initialTask">初動演習</a></li>
+          <li><a href="#about">私のこと</a></li>
+          <li><a href="#">ご連絡</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ■ ヒーローセクション ──────────────────────────────────── -->
+    <!-- ── SP用固定ロゴ（デフォルトでは隠す。メディアクエリで表示） ── -->
+    <div class="sp-logo">
+      <img src="images/hicreat_outline.png" alt="サイトロゴ" />
+    </div>
+    <div class="hero">
+      <!-- 背景画像 -->
+      <img src="images/pcHero.png" alt="真栄田岬の風景" class="hero_bg-image" />
+      <!-- 羅針盤画像 黒淵を解消するため -->
+      <div class="hero_title-image">
+        <img src="images/rotating_mark_yaxis.gif" alt="マーク" />
+      </div>
+      <!-- キャッチコピー（説明文） -->
+      <div class="hero_copy">
+        swell will be on and on. 「うねり」をつかまえて、次のアクションへ繋ぐ。
+        チャンスや素晴らしい出会いは、まるで波の「うねり（swell）」のように、
+        予期せぬ時に、断続的に訪れる。まばたきのような一瞬の出来事かもしれない。
+        だからこそ、その刹那を大切に捉えて、未来へと紡いでいきたい。
+      </div>
+      <div class="hero_sns">
+        <a href="https://github.com/ragrima7" target="_blank"><img src="images/github-mark-white.png"
+            alt="GitHub" /></a>
+        <a href="#"><img src="images/discord-Symbol-White.png" alt="Discord" /></a>
+        <a href="#"><img src="images/x_logo-white.png" alt="旧Twitter" /></a>
+      </div>
+      <!-- トップへ戻るボタン -->
+      <a href="#top" class="back-to-top" aria-label="トップへ戻る">
+        <img src="images/gotoTop.png" alt="Topへ戻る" />
+      </a>
+    </div>
+    <!-- パンくずナビ -->
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><span class="sep">&gt;</span></li>
+        <li><a href="">作品</a></li>
+        <li><span class="sep">&gt;</span></li>
+        <li>ポートフォリオ</li>
+      </ul>
+    </nav>
+
+    <!-- ■ メインコンテンツ ──────────────────────────────────── -->
+    <main>
+      <!-- ハンバーガーメニュー -->
+      <div class="hamburger" id="open_nav">
+        <img src="images/hamburger2.png" alt="">
+      </div>
+
+      <!-- ■  作品について -->
+      <section id="practice" id="attraction">
+        <h2 class="section-title section-title--left">
+          <div class="section-title_text">
+            <span class="en-text">Practice</span> <span class="jp-text">制作演習</span>
+          </div>
+        </h2>
+
+        <article class="attraction-item">
+          <h3>グループワーク JavaScript演習 協働・分業制作</h3>
+
+          <!-- ここからラッパーを追加 -->
+          <div class="attraction-content">
+            <!-- ── 左：画像コンテナ ── -->
+            <div class="attraction-item_media">
+              <!-- メイン画像 -->
+              <a href="../taiwan/index.html" target="_blank" alt="台湾ページへのリンク">
+                <img src="images/kyubun-main.png" alt="作品 メイン画像" class="main-img" />
+              </a>
+
+              <!-- サブ画像を横並び -->
+              <div class="sub-imgs">
+                <img src="images/kyubunSub-01.png" alt="作品 サブ画像1" class="responsive-image pc-only" />
+                <img src="images/kyubunSub-02.png" alt="作品 サブ画像2" class="responsive-image pc-only" />
+                <img src="images/sp-kyubunSub-01.png" alt="作品 サブ画像1" class="responsive-image sp-only" />
+                <img src="images/sp-kyubunSub-02.png" alt="作品 サブ画像2" class="responsive-image sp-only" />
+              </div>
+            </div>
+
+            <!-- ── 右：文字コンテナ ── -->
+            <div class="text-block">
+              <!-- 説明文 -->
+              <p class="description">
+                JavaScriptを用い演習教材
+                <a href="../taiwan/index.html" alt="台湾観光案内トップページへのリンク"><span class="text-link-blue">
+                    台湾観光案内サイト
+                  </span></a>
+                を３名体制で制作。私は
+                <a href="../taiwan/taipei/index.html" alt="台北ページへのリンク"><span class="text-link-blue">
+                    「台北」
+                  </span></a>
+                および
+                <a href="../taiwan/tainan/index.html" alt="台北ページへのリンク"><span class="text-link-blue">
+                    「台南」
+                  </span></a>
+                ２ページを担当。
+                実務での協働・分業を想定。年齢が20～50代まで
+                と多様なメンバー構成。現場感覚を
+                意識・共有するため、組織論と成果目標を掲げた。
+                毎日の目標宣言と進捗報告、ミーティングを通じ、
+                数値目標だけでなく適切な合意形成を心がけ、
+                非認知能力の向上も重視。JavaScript同様に動き
+                のある学習体験となった。
+                (コードは<a href="https://github.com/ragrima7/taiwan" target="_blank"><span
+                    class="text-link-blue">GitHub</span></a>へ)
+              </p>
+              <!-- 推奨時間パネル -->
+              <p class="time">
+                ２頁担当で効率化とモジュール化の知識を会得！
+              </p>
+              <p class="time2">
+                作業総時間：８０時間
+            </div>
+          </div> <!-- ── /.attraction-content ここまで ── -->
+        </article>
+
+        <div class="separator"></div>
+
+        <!-- — 台北101 — -->
+        <article class="attraction-item">
+          <h3>HTML/CSSの基礎演習 リフォーム会社（架空）のHP制作 </h3>
+
+          <!-- ここからラッパーを追加 -->
+          <div class="attraction-content">
+            <!-- ── 左：画像コンテナ ── -->
+            <div class="attraction-item_media">
+              <!-- メイン画像 -->
+              <a href="../design ‗house‗renovations/index.html" target="_blank" alt="リフォーム会社ホームページへのリンク">
+                <img src="images/renovate.png" alt="リフォーム会社ホームページ メイン画像" class="main-img" />
+              </a>
+              <!-- サブ画像を横並び -->
+              <div class="sub-imgs">
+                <img src="images/renovateSub-01.png" alt="リフォーム会社ホームページ サブ画像1" class="responsive-image pc-only" />
+                <img src="images/renovateSub-02.png" alt="リフォーム会社ホームページ サブ画像2" class="responsive-image pc-only" />
+                <img src="images/sp-renovateSub-01.png" alt="リフォーム会社ホームページ サブ画像1" class="responsive-image sp-only" />
+                <img src="images/sp-renovateSub-02.png" alt="リフォーム会社ホームページ サブ画像2" class="responsive-image sp-only" />
+              </div>
+            </div>
+
+            <!-- ── 右：文字コンテナ ── -->
+            <div class="text-block">
+              <!-- 説明文 -->
+              <p class="description">
+                単独での演習。HTML&#65291;CSSのみで、
+                <a href="../design ‗house‗renovations/index.html" target="_blank" alt="リフォーム会社ホームページへのリンク">
+                  <span class="text-link-blue">
+                    リフォーム会社のホームページ制作。
+                  </span>
+                </a>
+                figmaのカンプ通りにモバイルページから作業開始。
+                企業広報・広告で
+                <span class="text-red">エンゲージメント・成約率</span>は重要。
+                <strong>ユーザー層を想定し&triangleright;moreのホバーや入力画面の大きさも配慮</strong>。
+                ページが仕上がっていく過程が見え楽しいフェーズ。
+                全体構成をきちんと把握できずに作業を進めたため、終盤での調整に苦戦。
+                スケジュールと各作進捗管理が課題として明確に。
+                (コードは<a href="https://github.com/ragrima7/design-house-renovations" target="_blank"><span
+                    class="text-link-blue">GitHub</span></a>へ)
+              </p>
+              <!-- 推奨時間パネル -->
+              <p class="time">
+                最初のHP制作物としては〇。時間管理が課題。
+              </p>
+              <p class="time2">
+                作業総時間：８０時間程度
+            </div>
+          </div> <!-- ── /.attraction-content ここまで ── -->
+        </article>
+
+        <div class="separator"></div>
+
+
+        <!-- 初期 -->
+        <section id="initialTask">
+          <h2 class="section-title section-title--right">
+            <div class="section-title_text">
+              <span class="en-text">Initial Task</span>
+              <span class="jp-text">初動演習</span>
+            </div>
+          </h2>
+          <div class="initialTask_wrapper">
+            <div class="initialTask_textA">
+              <p>
+                HTMLとCSS、ほぼゼロからのスタート。
+                とにかく「手を動かす」ことを意識して、ちょっと難しい課題にも挑戦。
+                先生は全部教えるのではなく、「読んで、書いて、表示させて、質問と発表」
+                でまさにアクティブラーニング。質問する時は、「何がどうわからないか」
+                「問題点」を整理する。また自分でも調べる力（自走力）も徐々に身につく。
+                クラスの仲間とのやり取りも、知識の定着に繋がった。
+                あっという間に時間が過ぎ、コーディングを学び始めたばかりから、ずっと
+                内容の濃い学習が続く！
+              </p>
+            </div>
+            <div class="initialTask_imgB">
+              <a href="../sentai/index.html" alt="戦隊特撮シーンページへ" target="_blank">
+                <img src="images/sentai.png" alt="戦隊キャラ・背景素材" />
+              </a>
+            </div>
+          </div>
+          <div class="initialTask_wrapper">
+            <div class="initialTask_linksC">
+              <a href="#" class="js-modal-trigger" data-modal="santai" target="_blank">
+                <img src="images/kadai-01.png" alt="課題01" /></a>
+              <a href="#" class="js-modal-trigger" data-modal="kuku">
+                <img src="images/kadai-02.png" alt="課題02" /></a>
+              <a href="#" class="js-modal-trigger" data-modal="kukuJs">
+                <img src="images/kadai-03.png" alt="課題03" /></a>
+              <a href="#" class="js-modal-trigger" data-modal="cardRF">
+                <img src="images/kadai-04.png" alt="課題04" /></a>
+            </div>
+            <div class="initialTask_imgD">
+              <a href="../http-css-js-Review/table.html" alt="九九表ページへ" target="_blank">
+                <img src="images/kukuCss.png" alt="九九表CSSのみで作成" />
+              </a>
+            </div>
+          </div>
+          <div class="github-link-2l">
+            <p>
+              <a href="https://github.com/ragrima7/http-css-js-Review" target="_blank">九九表&amp;トランプ &gt; <span
+                  class="text-link-blue">GitHub</span></a>
+            </p>
+            <p>
+              <a href="https://github.com/ragrima7/sentai" target="_blank">戦隊レンジャー！&gt; <span
+                  class="text-link-blue">GitHub</span></a>
+            </p>
+          </div>
+        </section>
+        <div class="separator"></div>
+
+        <!-- ■ About 自己紹介 -->
+        <section id="about">
+          <h2 class="section-title section-title--left">
+            <div class="section-title_text">
+              <span class="en-text">About</span>
+              <span class="jp-text">私のこと</span>
+            </div>
+          </h2>
+          <div class="accsec_info">
+            <p>熱情と好奇心</p>
+          </div>
+          <!-- キャラクターマーク -->
+          <div class="big_mark" alt="トレードマーク">
+            <img src="images/big_mark.png" alt="ビジュアルアイデンティティー" />
+          </div>
+          <div class="about_me" alt="自己紹介">
+            <p>
+              マークとロゴは私自身のVI。マークは下部の英文字フレーズの意味を絵にした羅針盤と灯。
+              決して激しくはない熱情。新しいこと、変化を求め続ける人生でありたい。
+              本ページのトップとボトム部分に配置した「HICreat」ロゴは、イニシャルとの掛け合わせ。
+              主に創造性を意識しています。またそこから飛躍して、High、Island、Complement、Eat、
+              など、どうか少しでもご興味を抱いてくだされば本望です。
+            </p>
+          </div>
+          <!-- キャリア・スキル -->
+          <h4 class="details-title">【キャリアチェンジ・スキル】</h4>
+          <details>
+            <summary>2024/04~現在</summary>
+            <ul>
+              <li>プログラミング・エンジニアに向けて活動中</li>
+              <li>中央キャリアアップアカデミー　2025年3月～
+                <ul>
+                  <li>HTML/CSS、JavaScript、PHPの基礎を学習中</li>
+                  <li>Web制作の実践的なスキルを習得中</li>
+                  <li>ポートフォリオを作成中</li>
+                </ul>
+              </li>
+              <li>東京大学ブロックチェーンイノベーション寄付講座　2024年4月～
+                <ul>
+                  <ul>
+                    <li>個人情報保護の観点から暗号技術に惹かれて受講</li>
+                  </ul>
+                  <li>ブロックチェーン技術の基礎</li>
+                  <li>スマートコントラクトの開発</li>
+                  <li>分散型アプリケーション（DApps）の設計と実装</li>
+                  <li>セキュリティとプライバシーの考慮</li>
+                  <li>ブロックチェーンのビジネス応用</li>
+                  <li>上記他、Web3 に関する内容を網羅的に学習</li>
+                  <li>solidity基礎・合宿講座受講</li>
+                </ul>
+              </li>
+              <li>Linux入門（Linux Foundation - Education）にて基礎学習</li>
+              <li>Web3、IT教育関連の各種プロジェクトのイベントに積極参加</li>
+              <li>プログラミング学習を継続し、スキルアップに努める</li>
+            </ul>
+          </details>
+          <!-- 職歴 -->
+          <h4 class="details-title">【職歴】</h4>
+          <details>
+            <summary>1991/04~2024/03</summary>
+            <ul>
+              <li>株式会社ＪＳコーポレーション
+                <ul>
+                  <li>大阪本社、入社・勤務1991年4月～1992年3月</li>
+                </ul>
+                <ul>
+                  <li>関東支社、新規開拓1992年4月〜1998年3月
+                    <ul>
+                      <li>関東への市場進出における新規顧客開拓</li>
+                      <li>営業企画職（学校法人向け）</li>
+                      <li>広告提案・制作</li>
+                      <li>各種売り上げ目標達成、広告・出版物の完全納品</li>
+                      <li>テレフォンマーケティング組織化・設営</li>
+                      <li>採用・教育</li>
+                      <li>業績評価により課長昇進</li>
+                    </ul>
+                  </li>
+                  <li>大阪本社営業部隊の補強1998年4月〜2000年6月
+                    <ul>
+                      <li>大阪本社営業部門の補強（立て直し）</li>
+                      <li>各種売り上げ目標達成、広告・出版物の完全納品</li>
+                    </ul>
+                  </li>
+                  <li>新拠点（広島営業所）開設2000年6月〜2024年3月
+                    <ul>
+                      <li>中四国エリア顧客開拓のハブ拠点として広島営業所を新設</li>
+                      <li>初年度1人ですべての業務を行い、６年で５名体制へ</li>
+                      <li>各種売り上げ目標達成、広告・出版物の完全納品</li>
+                    </ul>
+                  </li>
+                  <li>関東支社の体制強化2007年4月〜
+                    <ul>
+                      <li>売上・代金回収・総務・新卒採用の強化</li>
+                      <li>営業体制の強化</li>
+                      <li>塾・予備校新規事業部立ち上げ2012年4月〜2018年3月
+                        <ul>
+                          <li>新規事業の立ち上げに伴う、営業・企画・制作</li>
+                          <li>新規顧客開拓</li>
+                          <li>塾予備校業界大手経営層との関係構築</li>
+                          <li>高校進路指導事業部2018年4月〜2024年3月
+                            <ul>
+                              <li>高各高等学校生徒へサイト利用者登録依頼</li>
+                              <li>進路ガイダンス企画・実施</li>
+                              <li>新外部講師として講演</li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </ul>
+                  </li>
+                  <li>2024年3月　一身上の都合により退職</li>
+                </ul>
+          </details>
+
+          <div class="accsec_info">
+            <p>趣味で行ったマニアなサーフポイント</p>
+          </div>
+          <!-- バナー画像 -->
+          <!-- <div class="about_banner">
+            <img src="images/pcabout.png" alt="アクセス全体マップ" />
+          </div> -->
+
+          <!-- 各交通手段 -->
+          <div class="about_grid">
+            <div class="about_item">
+              <h4><span>■フランス</span>：ビアリッツ</h4>
+              <p>
+                パリからTGVで6時間。飛行機だと1時間。海岸までは
+                駅・空港ともにアクセス良好。
+                夜行列車だと未明着なので交通手段が無く、徒歩で4～50分。
+                街と家々が綺麗なので徒歩も◎。
+                ボードは海岸のショップでレンタル可能。
+                その昔、ベルギーに向かうカカオ運搬船の寄港地だった
+                そうで、高級チョコレートでも有名。
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46331.35828454265!2d-1.563491418663565!3d43.46665348034894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51152b0af31e33%3A0x40665174813a830!2z44OV44Op44Oz44K5IOOAkjY0MjAwIOODk-OCouODquODg-ODhA!5e0!3m2!1sja!2sjp!4v1750596120249!5m2!1sja!2sjp"
+                width="295" height="200" style="border:0; display: block; margin: 20px auto 0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about_item">
+              <h4><span>■ニューヨーク</span>：ロッカウェイ</h4>
+              <p>
+                マンハッタンから地下鉄で一時間ちょい。
+                ロングビーチとは異なりキラキラ感はないが近い。
+                90st駅付近に道具すべてレンタルできるフレンドリーなサーフショップ
+                があり手ぶらでアクセス可能。
+                ビーチは管理されゴミも少なく、常にバギーのパトロールが
+                あり、のんびりとした雰囲気。
+                東北の日本海側のような水温。
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.5519612284857!2d-73.81833430596447!3d40.58590072229503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c268463993b79b%3A0x120f3543e1685b3!2sRockaway%20Beach!5e0!3m2!1sja!2sjp!4v1750597445620!5m2!1sja!2sjp"
+                width="295" height="200" style="border:0; display: block; margin: 20px auto 0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about_item">
+              <h4><span>■喜界島</span>：池治海岸</h4>
+              <p>
+                まず、波乗り目的で来る人はほとんどいない島。
+                基本サンゴがあちこち突起しているので干潮時によく確認しないと
+                危険。有名なダイビングポイントでもあるのでそちらがオススメ。
+                また、隆起サンゴ独特の地形やドラマで撮影された風景、地下ダムという
+                隠れたモノもある。
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14048.560803187065!2d129.94702539954253!3d28.32435855051291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x351f876493947e09%3A0xb184f7014f53f1ab!2z5rGg5rK75rW35rC05rW05aC0!5e0!3m2!1sja!2sjp!4v1750598918486!5m2!1sja!2sjp"
+                width="295" height="200" style="border:0; display: block; margin: 20px auto 0" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about_item">
+              <h4 class="easycard-off"><span class="all-caps"></span>■島根：折居海岸</h4>
+              <h4 class="easycard-on"><span class="all-caps">■島根三隅</span>&emsp;折居海岸：道の駅裏</h4>
+              <p>
+                ここの波を当てるのは難しい。山陰本線の土手に遮られシークレットビーチのような雰囲気。
+                線路土手下の用水路トンネルからアクセスすると秘境感抜群。散策や磯遊びなども◎。
+                この辺り、夜の列車に乗り海を見ると、車窓からの明かりが浅い海底を透かし幻想的で息をのむほど。
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1637.699865991072!2d131.9730503533474!3d34.82104089999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355afc2126ddc131%3A0xee34f4dd6746829f!2z5oqY5bGF5rW35bK4!5e0!3m2!1sja!2sjp!4v1750600285817!5m2!1sja!2sjp"
+                width="295" height="200" style="border:0; display: block; margin: 20px auto 0" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footerLine">
+        <p class="footerFlag"><img src="images/rotating_mark_yaxis.gif" alt=""></p>
+        <div class="footerWrap">
+          <nav class="footerNav">
+            <ul>
+              <li class="li_pc"><a href="#top">TOPへもどる</a></li>
+              <li class="li_mb"><a href="#top">TOPへもどる</a></li>
+              <li><a href="#practice">制作演習</a></li>
+              <li><a href="#initialTask">初動演習</a></li>
+              <li><a href="#about">私のこと</a></li>
+              <li><a href="#">ご連絡</a></li>
+            </ul>
+          </nav>
+          <p><a href="#top"><img src="images/hicreat_outline.png" alt="ロゴ"></a></p>
+          <div class="sns_footer">
+            <ul>
+              <li><a href="https://github.com/ragrima7" target="_blank"><img src="images/github-mark-white.png"
+                    alt="GitHub"></a></li>
+              <li><a href="#"><img src="images/discord-Symbol-White.png" alt="discor"></a></li>
+              <li><a href="#"><img src="images/x_logo-white.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="small"><small>Copyright (C) 2025 H.IKEDA</small></p>
+    </footer>
+  </div>
+
+  <!-- ドロワーメニューここから（footer下、/body前） -->
+  <nav id="nav">
+    <div class="logo">
+      <a href="#top"><img src="images/hicreat_outline.png" alt=""></a>
+    </div>
+    <div class="batu" id="batu">
+      <img src="images/batu.png" alt="">
+    </div>
+    <ul>
+      <li class="menu">ポートフォリオ</li>
+      <li class="menu">Menu</li>
+      <li><a href="#top" class="all-caps">TOP</a></li>
+      <li><a href="#practice">制作演習</a></li>
+      <li><a href="#initialTask">初動演習</a></li>
+      <li><a href="#about">私のこと</a></li>
+      <li><a href="#">ご連絡</a></li>
+    </ul>
+  </nav>
+  <!-- ここまで -->
+
+  <div id="modal-overlay" class="modal-overlay" tabindex="-1" aria-hidden="true" style="display:none;">
+    <div class="modal-window" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="閉じる">
+        <img src="images/m-close.png" alt="閉じる" />
+      </button>
+      <div class="modal-content">
+        <h2 class="modal-title"></h2>
+        <img class="modal-img" src="" alt="" />
+        <p class="modal-description"></p>
+        <ul class="modal-hours"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/script.js"> </script>
+
+</body>
+
+</html>
