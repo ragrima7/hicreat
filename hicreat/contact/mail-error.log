@@ -1,0 +1,10 @@
+[10-Aug-2025 21:42:20 Asia/Tokyo] [send_mail] --- start ---
+[10-Aug-2025 21:42:20 Asia/Tokyo] [send_mail] csrf ok
+[10-Aug-2025 21:42:20 Asia/Tokyo] [send_mail] honeypot ok
+[10-Aug-2025 21:42:20 Asia/Tokyo] [send_mail] returnSafe=https://ss542909.stars.ne.jp/hicreat/index.html#
+[10-Aug-2025 21:42:20 Asia/Tokyo] [send_mail] validation ok
+[10-Aug-2025 21:42:21 Asia/Tokyo] [send_mail] recaptcha result: {"success":true,"challenge_ts":"2025-08-10T12:41:44Z","hostname":"ss542909.stars.ne.jp"}
+[10-Aug-2025 21:42:21 Asia/Tokyo] [send_mail] recaptcha ok
+[10-Aug-2025 21:42:21 Asia/Tokyo] [send_mail] sending mail...
+[10-Aug-2025 21:42:21 Asia/Tokyo] [send_mail] send result: OK
+[10-Aug-2025 21:42:21 Asia/Tokyo] [send_mail] redirect to: /hicreat/contact/thanks.php?return=https%3A%2F%2Fss542909.stars.ne.jp%2Fhicreat%2Findex.html%23
