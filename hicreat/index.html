@@ -20,9 +20,8 @@
   <link rel="icon" href="images/mark.png" type="image/icon">
   <link rel="icon" href="images/mark.png" type="image/png">
   <link rel="apple-touch-icon" href="images/mark.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
-  <link rel="manifest" href="/path/to/your/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="128x128" href="https://ss542909.stars.ne.jp/hicreat/images/mark.png">
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body id="top">
@@ -40,8 +39,16 @@
           <li><a href="#practice">制作演習</a></li>
           <li><a href="#initialTask">初動演習</a></li>
           <li><a href="#about">私のこと</a></li>
-          <li><a href="#">ご連絡</a></li>
+          <li><a href="#" id="openContact">ご連絡</a></li>
         </ul>
+        <script>
+          document.getElementById('openContact').addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = '/hicreat/contact/contact.php?return=' + encodeURIComponent(location.href);
+            window.open(url, '_blank', 'noopener');
+          });
+        </script>
+
       </nav>
     </header>
 
@@ -102,6 +109,72 @@
         </h2>
 
         <article class="attraction-item">
+          <h3>データベース連動 PHPを用いた通販サイトの制作演習</h3>
+
+          <!-- ここからラッパーを追加 -->
+          <div class="attraction-content">
+            <!-- ── 左：画像コンテナ ── -->
+            <div class="attraction-item_media">
+              <!-- メイン画像 -->
+              <a href="../taiwan/index.html" target="_blank" alt="台湾ページへのリンク">
+                <img src="images/ccdonuts.png" alt="作品 メイン画像" class="main-img" />
+              </a>
+
+              <!-- サブ画像を横並び -->
+              <div class="sub-imgs">
+                <img src="images/ccdonutsSub-01.png" alt="作品 サブ画像1" class="responsive-image pc-only" />
+                <img src="images/ccdonutsSub-02.png" alt="作品 サブ画像2" class="responsive-image pc-only" />
+                <img src="images/sp-ccdonutsSub-01.png" alt="作品 サブ画像1" class="responsive-image sp-only" />
+                <img src="images/sp-ccdonutsSub-02.png" alt="作品 サブ画像2" class="responsive-image sp-only" />
+              </div>
+            </div>
+
+            <!-- ── 右：文字コンテナ ── -->
+            <div class="text-block">
+              <!-- 説明文 -->
+              <p id="ccdonutsTop" class="description">
+                PHPを用い
+                <a href="../ccdonuts/index.php" alt="ドーナッツショップ・トップページへのリンク"><span class="text-link-blue">
+                    「ドーナッツ通販サイト」
+                  </span></a>
+                を制作。先ず、全体構成を
+                <a href="ccdonuts-diagram.html" alt="ドーナッツ通販サイト制作資料図へのリンク"><span class="text-link-blue">
+                    ER図
+                  </span></a>
+                や
+                <a href="ccdonuts-diagram.html#transitionDiagram" alt="ドーナッツ通販サイト制作資料図へのリンク"><span
+                    class="text-link-blue">
+                    画面遷移図
+                  </span></a>
+                および
+                <a href="ccdonuts-diagram.html#fileConfig" alt="ドーナッツ通販サイト制作資料図へのリンク"><span class="text-link-blue">
+                    ファイル構成
+                  </span></a>
+                など書面にし制作範囲と工程を明確化。
+                ローカル実装が基本課題だが、
+                本番環境でのデータベース連動まで
+                チャレンジ。
+                レイアウト詳細調整はあと回し、
+                カート・会員登録・クレジットカード登録
+                のページなどの機能実装を優先。
+                ファイルのバージョン管理・セキュリティー管理など、今後の学習
+                課題の発見にもつながった。
+                (コードは<a href="https://github.com/ragrima7/ccdonuts" target="_blank"><span
+                    class="text-link-blue">GitHub</span></a>へ)
+              </p>
+
+              <p class="time">
+                データベースとセキュリティの概念を会得！
+              </p>
+              <p class="time2">
+                作業総時間：６０時間
+            </div>
+          </div>
+        </article>
+
+        <div class="separator"></div>
+
+        <article class="attraction-item">
           <h3>グループワーク JavaScript演習 協働・分業制作</h3>
 
           <!-- ここからラッパーを追加 -->
@@ -149,31 +222,27 @@
                 (コードは<a href="https://github.com/ragrima7/taiwan" target="_blank"><span
                     class="text-link-blue">GitHub</span></a>へ)
               </p>
-              <!-- 推奨時間パネル -->
+
               <p class="time">
                 ２頁担当で効率化とモジュール化の知識を会得！
               </p>
               <p class="time2">
                 作業総時間：８０時間
             </div>
-          </div> <!-- ── /.attraction-content ここまで ── -->
+          </div>
         </article>
 
         <div class="separator"></div>
 
-        <!-- — 台北101 — -->
+
         <article class="attraction-item">
           <h3>HTML/CSSの基礎演習 リフォーム会社（架空）のHP制作 </h3>
 
-          <!-- ここからラッパーを追加 -->
           <div class="attraction-content">
-            <!-- ── 左：画像コンテナ ── -->
             <div class="attraction-item_media">
-              <!-- メイン画像 -->
               <a href="../design ‗house‗renovations/index.html" target="_blank" alt="リフォーム会社ホームページへのリンク">
                 <img src="images/renovate.png" alt="リフォーム会社ホームページ メイン画像" class="main-img" />
               </a>
-              <!-- サブ画像を横並び -->
               <div class="sub-imgs">
                 <img src="images/renovateSub-01.png" alt="リフォーム会社ホームページ サブ画像1" class="responsive-image pc-only" />
                 <img src="images/renovateSub-02.png" alt="リフォーム会社ホームページ サブ画像2" class="responsive-image pc-only" />
@@ -182,9 +251,7 @@
               </div>
             </div>
 
-            <!-- ── 右：文字コンテナ ── -->
             <div class="text-block">
-              <!-- 説明文 -->
               <p class="description">
                 単独での演習。HTML&#65291;CSSのみで、
                 <a href="../design ‗house‗renovations/index.html" target="_blank" alt="リフォーム会社ホームページへのリンク">
@@ -202,20 +269,18 @@
                 (コードは<a href="https://github.com/ragrima7/design-house-renovations" target="_blank"><span
                     class="text-link-blue">GitHub</span></a>へ)
               </p>
-              <!-- 推奨時間パネル -->
               <p class="time">
                 最初のHP制作物としては〇。時間管理が課題。
               </p>
               <p class="time2">
                 作業総時間：８０時間程度
             </div>
-          </div> <!-- ── /.attraction-content ここまで ── -->
+          </div>
         </article>
 
         <div class="separator"></div>
 
 
-        <!-- 初期 -->
         <section id="initialTask">
           <h2 class="section-title section-title--right">
             <div class="section-title_text">
@@ -272,7 +337,6 @@
         </section>
         <div class="separator"></div>
 
-        <!-- ■ About 自己紹介 -->
         <section id="about">
           <h2 class="section-title section-title--left">
             <div class="section-title_text">
@@ -283,7 +347,6 @@
           <div class="accsec_info">
             <p>熱情と好奇心</p>
           </div>
-          <!-- キャラクターマーク -->
           <div class="big_mark" alt="トレードマーク">
             <img src="images/big_mark.png" alt="ビジュアルアイデンティティー" />
           </div>
@@ -296,7 +359,46 @@
               など、どうか少しでもご興味を抱いてくだされば本望です。
             </p>
           </div>
-          <!-- キャリア・スキル -->
+
+          <h4 class="details-title">【プロセス・アウトプット】</h4>
+          <section id="qiita">
+            <h2 class="qiita-heading">
+              <img src="images/qiita-icon.png" alt="Qiita Logo" class="qiita-icon" />
+              Qiita Articles
+            </h2>
+            <div class="qiita-scroll-outer">
+              <div class="qiita-scroll-wrapper">
+                <a href="https://qiita.com/ragrima7/items/b14e3cbd2dba6d4b7987" target="_blank" class="qiita-card">
+                  <h3>UI/UXへの踏み込みについて</h3>
+                  <p>@ragrima7</p>
+                  <a href="https://qiita.com/ragrima7/items/39d9a6fa21c3dc039c46" target="_blank" class="qiita-card">
+                    <h3>アプリのモックアップ</h3>
+                    <p>@ragrima7</p>
+                  </a>
+                  <a href="https://qiita.com/ragrima7/items/f5b5ce2949fb48e29d0e" target="_blank" class="qiita-card">
+                    <h3>スクロールが前面に出てしまう問題</h3>
+                    <p>@ragrima7</p>
+                  </a>
+                  <a href="https://qiita.com/ragrima7/items/ecdc08e7baa096d1b10e" target="_blank" class="qiita-card">
+                    <h3>Qiitaの記事を埋め込み掲載</h3>
+                    <p>@ragrima7</p>
+                  </a>
+                  <a href="https://qiita.com/ragrima7/items/6907e50e23135bd4a573" target="_blank" class="qiita-card">
+                    <h3>英数変換キー割り当ての設定</h3>
+                    <p>@ragrima7</p>
+                  </a>
+                  <a href="https://qiita.com/ragrima7/items/2b20265fff3919156532" target="_blank" class="qiita-card">
+                    <h3>IMEメニューに設定が表示されない問題</h3>
+                    <p>@ragrima7</p>
+                  </a>
+                  <a href="https://qiita.com/ragrima7/items/0cdca9d1cee918537c0a" target="_blank" class="qiita-card">
+                    <h3>ごあいさつ</h3>
+                    <p>@ragrima7</p>
+                  </a>
+              </div>
+            </div>
+          </section>
+
           <h4 class="details-title">【資格・認定など】</h4>
           <details>
             <summary>2025/04~現在</summary>
@@ -305,8 +407,8 @@
               <li>東京大学ブロックチェーンイノベーション寄付講座
                 <ul>
                   <li>2024年度修了SBT（Silver Achievement）受領。</li>
-                  <li>SBT詳細はこちら：<a href="https://opensea.io/item/matic/0xa21b7104c807e148171a32c519515fd0143fbeaf/2" target="_blank"><span
-                  class="text-link-blue">OpenSeaリンク</span></a></li>
+                  <li>SBT詳細はこちら：<a href="https://opensea.io/item/matic/0xa21b7104c807e148171a32c519515fd0143fbeaf/2"
+                      target="_blank"><span class="text-link-blue">OpenSeaリンク</span></a></li>
                 </ul>
             </ul>
           </details>
@@ -341,7 +443,7 @@
               <li>プログラミング学習を継続し、スキルアップに努める</li>
             </ul>
           </details>
-          <!-- 職歴 -->
+
           <h4 class="details-title">【職歴】</h4>
           <details>
             <summary>1991/04~2024/03</summary>
@@ -401,12 +503,7 @@
           <div class="accsec_info">
             <p>趣味で行ったマニアなサーフポイント</p>
           </div>
-          <!-- バナー画像 -->
-          <!-- <div class="about_banner">
-            <img src="images/pcabout.png" alt="アクセス全体マップ" />
-          </div> -->
 
-          <!-- 各交通手段 -->
           <div class="about_grid">
             <div class="about_item">
               <h4><span>■フランス</span>：ビアリッツ</h4>
@@ -480,7 +577,7 @@
               <li><a href="#practice">制作演習</a></li>
               <li><a href="#initialTask">初動演習</a></li>
               <li><a href="#about">私のこと</a></li>
-              <li><a href="#">ご連絡</a></li>
+              <li><a href="/hicreat/contact/contact.php">ご連絡</a></li>
             </ul>
           </nav>
           <p><a href="#top"><img src="images/hicreat_outline.png" alt="ロゴ"></a></p>
@@ -498,7 +595,6 @@
     </footer>
   </div>
 
-  <!-- ドロワーメニューここから（footer下、/body前） -->
   <nav id="nav">
     <div class="logo">
       <a href="#top"><img src="images/hicreat_outline.png" alt=""></a>
@@ -513,7 +609,7 @@
       <li><a href="#practice">制作演習</a></li>
       <li><a href="#initialTask">初動演習</a></li>
       <li><a href="#about">私のこと</a></li>
-      <li><a href="#">ご連絡</a></li>
+      <li><a href="/hicreat/contact/contact.php">ご連絡</a></li>
     </ul>
   </nav>
   <!-- ここまで -->

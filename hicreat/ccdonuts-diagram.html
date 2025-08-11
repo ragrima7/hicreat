@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HICreat | ポートフォリオ</title>
+    <!-- 共通リセット -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <!-- ページ固有スタイル -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/specific_styles.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="images/mark.png" type="image/icon">
+    <link rel="icon" href="images/mark.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/mark.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="images/mark.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://ss542909.stars.ne.jp/hicreat/images/mark.png">
+    <link rel="manifest" href="manifest.json">
+    <script src="scripts/drawer.js"></script>
+</head>
+
+<body class="dark-blue-bg">
+
+    <header>
+        <h1 class="pc_h1"><img src="images/hicreat_black.png" alt=""></h1>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="index.html" class="all-caps">TOPへ戻る</a></li>
+                <li><a href="index.html#ccdonutsTop" class="all-caps">PHP演習に戻る</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hamburger" id="open_nav">
+        <img src="images/hamburger2.png" alt="">
+    </div>
+    <nav id="nav">
+        <div class="logo">
+            <a href="#top"><img src="images/hicreat_outline.png" alt=""></a>
+        </div>
+        <div class="batu" id="batu">
+            <img src="images/batu.png" alt="">
+        </div>
+        <ul>
+            <li class="menu">ポートフォリオ</li>
+            <li class="menu">Menu</li>
+            <li><a href="index.html#ccdonutsTop" class="all-caps">PHP演習に戻る</a></li>
+            <br>
+            <li><a href="index.html#top" class="all-caps">TOPページ</a></li>
+            <li><a href="index.html#practice">制作演習</a></li>
+            <li><a href="index.html#initialTask">初動演習</a></li>
+            <li><a href="index.html#about">私のこと</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- 資料画像ここから -->
+    <main class="main">
+        <div class="dialog">
+            <ul>
+                <li class="dialog-title">ER図</li>
+                <li><img src="images/erDiagram.png" alt="ER図" /></li>
+                <li id="transitionDiagram" class="dialog-title">画面遷移図</li>
+                <li><img src="images/transitionDiagram.png" alt="画面遷移図" /></li>
+                <li id="fileConfig" class="dialog-title">ファイル構成</li>
+                <li><img src="images/fileConfig.png" alt="ファイル構成" /></li>
+            </ul>
+        </div>
+    </main>
+    <p class="small"><small>Copyright (C) 2025 H.IKEDA</small></p>
+
+</body>
+
+</html>

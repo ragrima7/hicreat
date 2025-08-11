@@ -1,0 +1,13 @@
+{
+  "name": "ポートフォリオ",
+  "short_name": "HICreat",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/hicreat//images/mark.png",
+      "sizes": "1000x1000",
+      "type": "image/png"
+    }
+  ]
+}
