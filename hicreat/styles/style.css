@@ -767,6 +767,104 @@ footer {
   display: none;
 }
 
+#qiita {
+  margin: 2% auto;
+  max-width: 928px;
+}
+.qiita-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ロゴとテキストの間隔 */
+  margin: 0;
+}
+
+.qiita-icon {
+  width: clamp(10px, 2vw, 32px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.qiita-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.qiita-scroll-outer {
+  position: relative; /* フェードの描画基準 */
+}
+
+.qiita-scroll-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 16px;
+  /* -webkit-overflow-scrolling: touch; */
+}
+.qiita-scroll-outer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to left, white 0%, rgba(255,255,255,0) 100%);
+}
+
+
+.qiita-card {
+  flex: 0 0 auto;
+  min-width: 140px; 
+  aspect-ratio: 4 / 3;
+  width: clamp(140px, 30vw, 280px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-decoration: none;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.qiita-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #55C500;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.qiita-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.qiita-card h3 {
+  font-size: clamp(16px, 2vw, 22px);
+  margin: auto 0; /* 上下中央揃えにする */
+  font-weight: bold;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.qiita-card p {
+  font-size: clamp(8px, 1.5vw, 14px); 
+  color: #777;
+  margin-top: auto; /* 下部に固定 */
+  text-align: right;
+}
+
 
 details {
   border: 1px solid #aaa;
@@ -1369,4 +1467,7 @@ details li {
 
   /* ここまで */
 
+}
+#ccdonutsTop {
+  scroll-margin-top: 118px;
 }

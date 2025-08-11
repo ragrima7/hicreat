@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dialog {
+    font-size: clamp(0.5rem, 5vw, 1.2rem);
+    color: black;
+    font-weight: regular;
+    text-align: center;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dialog-title {
+    margin-top: 2em;
+}
+
+.dialog li img {
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.small {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+#fileConfig,
+#transitionDiagram {
+  scroll-margin-top: 48px;
+}
